@@ -20,4 +20,6 @@ pipelines:
           onExecute:
             - printenv
             - echo "Running second trigger done"
+          onComplete:
+            - save_tests testResults/mocha-junit-reporter
 
