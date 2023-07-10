@@ -20,7 +20,4 @@ pipelines:
           onExecute:
             - printenv
             - echo "Running second trigger done"
-          onComplete:
-            - add_pipeline_files $confFileName jsonfile cat $confFileName 
-            - save_tests testResults/mocha-junit-reporter
-            - mv mochawesome-report /mochawesome. html mochawesome-${steplet_id} .html
+
